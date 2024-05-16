@@ -8,7 +8,7 @@ boxes.forEach((box) => {
 
         compteur++
 
-        if (boolean == true){
+        if (boolean){
             box.textContent = "O"
             box.style.color ="green"
             boolean = false

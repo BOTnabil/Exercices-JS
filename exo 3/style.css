@@ -1,3 +1,10 @@
+body{
+  background-color: rgb(162, 162, 226);
+  font-family:Verdana, Tahoma, sans-serif;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+
 .wrapper{
     display: flex;
     margin-left: 600px;
@@ -9,16 +16,17 @@ p{
 }
 
 .box {
-    background-color: rgb(136, 174, 136);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255, 0.5);
     height: 200px;
     width: 200px;
     display: flex;
-    font-size: 40px;
-    font-family: 'Times New Roman';
     justify-content: center;
     margin: 5px;
-    transition: 1s;
     line-height: 200px;
+    border-radius: 10px;
 }
 
+#txt{
+    text-align: center;
+    
+}

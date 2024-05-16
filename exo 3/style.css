@@ -1,0 +1,24 @@
+.wrapper{
+    display: flex;
+    margin-left: 600px;
+    flex-direction: row;
+}
+
+p{
+    margin-top: 70px;
+}
+
+.box {
+    background-color: rgb(136, 174, 136);
+    color: rgb(255, 255, 255);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    justify-content: center;
+    margin: 5px;
+    transition: 1s;
+    line-height: 200px;
+}
+

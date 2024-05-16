@@ -1,3 +1,16 @@
+.wrapper1{
+    display: flex;
+    margin-left: 700px;
+    flex-direction: row;
+    margin-top: 200px;
+}
+
+.wrapper2{
+    display: flex;
+    margin-left: 700px;
+    flex-direction: row;
+}
+
 p{
     margin-top: 70px;
 }

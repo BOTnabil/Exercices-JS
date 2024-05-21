@@ -1,6 +1,10 @@
-#colorpad {
-    display: none;
-    width:100px;
-    height:100px;
-    background-color:#ffffff
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
 }

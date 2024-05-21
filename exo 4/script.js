@@ -1,25 +1,28 @@
-const box = document.getElementById("colorpad")
 
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
+  const container = document.getElementById('container');
+  let squares = [];
 
-function setRandomColor() {
-    box.style.backgroundColor = getRandomColor()
-}
+  function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+  }
 
-// document.addEventListener("keypress", function(event) {
-//     if (event.keyCode == 38) {
-//       alert('hi.');
-//     }
-//   });
-
-// display none fait
-// event clicker clavier add
-// activer la random color des le debut 
-// cloner le display none tout en le mettant en display flex 
+  document.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowDown') {
+        const square = document.createElement('div');
+        square.style.width = '100px';
+        square.style.height = '100px';
+        square.style.backgroundColor = getRandomColor();
+        container.appendChild(square);
+        squares.push(square);
+      } else if (event.key === 'ArrowUp') {
+        if (squares.length > 0) {
+          const lastSquare = squares.pop();
+          container.removeChild(lastSquare);
+      }
+      }
+  });

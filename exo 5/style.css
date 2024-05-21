@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+
+
+.quote {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
